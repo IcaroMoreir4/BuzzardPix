@@ -608,6 +608,10 @@ video {
   margin-inline-end: 0.5rem;
 }
 
+.ml-\[100px\] {
+  margin-left: 100px;
+}
+
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -618,6 +622,10 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-2 {
@@ -640,6 +648,14 @@ video {
   margin-top: 30px;
 }
 
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
+}
+
 .flex {
   display: flex;
 }
@@ -654,6 +670,10 @@ video {
 
 .h-\[100\%\] {
   height: 100%;
+}
+
+.h-\[1px\] {
+  height: 1px;
 }
 
 .h-\[250px\] {
@@ -698,6 +718,10 @@ video {
 
 .w-\[155px\] {
   width: 155px;
+}
+
+.w-\[1700px\] {
+  width: 1700px;
 }
 
 .w-\[20\%\] {
@@ -748,6 +772,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -776,8 +804,16 @@ video {
   justify-items: center;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -862,8 +898,16 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-cor-0 {
+  background-color: var(--cor-0);
+}
+
 .bg-cor-p1 {
   background-color: var(--cor-p1);
+}
+
+.bg-cor-p2 {
+  background-color: var(--cor-p2);
 }
 
 .bg-white {
@@ -965,6 +1009,16 @@ video {
   line-height: 1.35;
 }
 
+.text-1-xxl {
+  font-size: 4rem;
+  line-height: 1.125;
+}
+
+.text-2-l {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
 .text-2-m {
   font-size: 1.125rem;
   line-height: 1.35;
@@ -985,6 +1039,10 @@ video {
 
 .text-cor-0 {
   color: var(--cor-0);
+}
+
+.text-cor-12 {
+  color: var(--cor-12);
 }
 
 .text-cor-p1 {
@@ -1048,6 +1106,11 @@ video {
 
 .bg-principal{
   background: radial-gradient(circle at top left, rgba(235, 101, 18, 0.45) 0%, rgba(0, 0, 0, 0) 25%),             radial-gradient(circle at bottom right, rgba(235, 101, 18, 0.45) 0%, rgba(0, 0, 0, 0) 25%), #000000;
+}
+
+.bg-topLaranja{
+  background-image: linear-gradient(to bottom, var(--cor-p1) 35%, var(--cor-12) 35%);
+  height: 94.8vh;
 }
 
 .hover\:border-\[1px\]:hover {

@@ -22,4 +22,9 @@
 
 .bg-principal{
     background: radial-gradient(circle at top left, rgba(235, 101, 18, 0.45) 0%, rgba(0, 0, 0, 0) 25%),             radial-gradient(circle at bottom right, rgba(235, 101, 18, 0.45) 0%, rgba(0, 0, 0, 0) 25%), #000000;
-  }
+}
+
+.bg-topLaranja{
+    background-image: linear-gradient(to bottom, var(--cor-p1) 35%, var(--cor-12) 35%);
+    height: 94.8vh;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Transações</title>
+    <link rel="stylesheet" href="../../build/assets/css/app.css">
+    <link rel="shortcut icon" href="../../build/assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body class="bg-topLaranja">
+
+    <h1 class="text-1-xxl font-poppins text-cor-12 ml-[100px] mt-[50px]">Meu Histórico</h1>
+
+    <div class="grid justify-center w-[100%] gap-6 mt-[60px]">
+        <div class="w-[1700px] h-[250px] bg-cor-0 rounded-xl">
+            <h2 class="font-kulim text-2-l p-3">Histórico de Transações</h2>
+            <div class="bg-cor-p2 h-[1px] w-[100%]"></div>
+            <div class="grid grid-cols-5 justify-items-center items-center mt-14">
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Data e Hora</h3>
+                    <p class="font-poppins text-1-m">06/08/2024 - 15:59</p>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Valor</h3>
+                    <p class="font-poppins text-1-m">R$ 7.000,00</p>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Operação</h3>
+                    <div class="flex">
+                        <img src="../../build/assets/images/saque.svg" alt="">
+                        <a class="font-poppins text-1-m" href="./">Saque</a>
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Tipo</h3>
+                    <p class="font-poppins text-1-m">Débito</p>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Saldo após a operação</h3>
+                    <p class="font-poppins text-1-m">R$ 14.570,00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[1700px] h-[250px] bg-cor-0 rounded-xl">
+            <h2 class="font-kulim text-2-l p-3">Histórico de Transações</h2>
+            <div class="bg-cor-p2 h-[1px] w-[100%]"></div>
+            <div class="grid grid-cols-5 justify-items-center items-center mt-14">
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Data e Hora</h3>
+                    <p class="font-poppins text-1-m">06/08/2024 - 15:59</p>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Valor</h3>
+                    <p class="font-poppins text-1-m">R$ 7.000,00</p>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Operação</h3>
+                    <div class="flex">
+                        <img src="../../build/assets/images/saque.svg" alt="">
+                        <a class="font-poppins text-1-m" href="./">Saque</a>
+                    </div>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Tipo</h3>
+                    <p class="font-poppins text-1-m">Débito</p>
+                </div>
+                <div class="grid gap-4">
+                    <h3 class="font-poppins text-1-m text-cor-p1">Saldo após a operação</h3>
+                    <p class="font-poppins text-1-m">R$ 14.570,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <img class="absolute top-12 left-7 cursor-pointer" id="abrirMenu" src="../../build/assets/images/menu-icon_branco.svg"
+        alt="">
+
+    <nav class="absolute bg-principal h-[100%] top-0 grid items-center p-4 w-[20%] left-[-100%] transition-all duration-300 ease-in-out"
+        id="menu">
+
+        <img class="absolute top-12 left-7 cursor-pointer" id="fecharMenu" src="../../build/assets/images/menu-icon_branco.svg"
+            alt="">
+
+        <ul class="grid gap-5">
+
+            <li>
+                <a class="flex items-center text-cor-0 font-kulim text-2-m font-bold border-solid border-transparent hover:border-[1px] hover:border-cor-p2 rounded-[5px] p-3 transition duration-300 ease-in-out"
+                    href="./home.html">
+                    <img class="pr-2" src="../../build/assets/images/home-icon.svg" alt="">
+                    <p>Início</p>
+                </a>
+            </li>
+
+            <li>
+                <a class="flex items-center text-cor-0 font-kulim text-2-m font-bold border-solid border-transparent hover:border-[1px] hover:border-cor-p2 rounded-[5px] p-3 transition duration-300 ease-in-out"
+                    href="./">
+                    <img class="pr-2" src="../../build/assets/images/investimentos-icon.svg" alt="">
+                    <p>Investimentos</p>
+                </a>
+            </li>
+
+            <li>
+                <a class="flex items-center text-cor-0 font-kulim text-2-m font-bold border-solid border-transparent hover:border-[1px] hover:border-cor-p2 rounded-[5px] p-3 transition duration-300 ease-in-out"
+                    href="./">
+                    <img class="pr-2" src="../../build/assets/images/carteira-icon.svg" alt="">
+                    <p>Carteira</p>
+                </a>
+            </li>
+
+            <li>
+                <a class="flex items-center text-cor-0 font-kulim text-2-m font-bold border-solid border-transparent hover:border-[1px] hover:border-cor-p2 rounded-[5px] p-3 transition duration-300 ease-in-out"
+                    href="./">
+                    <img class="pr-2" src="../../build/assets/images/meusIvestimentos-icon.svg" alt="">
+                    <p>Meus Investimentos</p>
+                </a>
+            </li>
+
+            <li>
+                <a class="flex items-center text-cor-0 font-kulim text-2-m font-bold border-solid border-transparent hover:border-[1px] hover:border-cor-p2 rounded-[5px] p-3 transition duration-300 ease-in-out"
+                    href="./">
+                    <img class="pr-2" src="../../build/assets/images/tranferir-icon.svg" alt="">
+                    <p>Tranferir Saldo</p>
+                </a>
+            </li>
+
+            <li>
+                <a class="flex items-center text-cor-0 font-kulim text-2-m font-bold border-solid border-transparent hover:border-[1px] hover:border-cor-p2 rounded-[5px] p-3 transition duration-300 ease-in-out"
+                    href="./">
+                    <img class="pr-2" src="../../build/assets/images/historico-icon.svg" alt="">
+                    <p>Histórico de Transações</p>
+                </a>
+            </li>
+
+            <li>
+                <a class="flex items-center text-cor-0 font-kulim text-2-m font-bold border-solid border-transparent hover:border-[1px] hover:border-cor-p2 rounded-[5px] p-3 transition duration-500 ease-in-out"
+                    href="./">
+                    <img class="pr-2" src="../../build/assets/images/perfil-icon.svg" alt="">
+                    <p>Meu Perfil</p>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
