@@ -14,9 +14,9 @@
         <form class="grid place-items-center" action="">
             <div class="grid w-[90%]">
                 <label class="text-cor-p1 text-kulim text-2-m" for="email">Email</label>
-                <input placeholder="caetano.gomes@gmail.com" class="w-[100%] bg-black border-[1px] border-cor-p1 rounded-[7px] h-12 p-2" type="email" name="email" id="email">
+                <input placeholder="caetano.gomes@gmail.com" class="w-[100%] bg-black border-[1px] border-cor-p1 rounded-[7px] h-12 p-2 text-cor-0" type="email" name="email" id="email" required>
                 <div class="flex items-start mt-1">
-                    <input class="mt-1 mr-1 " type="checkbox" name="termos" id="termos">
+                    <input class="mt-1 mr-1 " type="checkbox" name="termos" id="termos" required>
                     <label class="text-cor-0 text-1-xs font-poppins font-bold" for="termos">Ao criar uma conta, eu concordo com os <a class="text-cor-p1 hover:text-[#FFA366]" href="./">Termos de Serviço</a> e com a <a class="text-cor-p1 hover:text-[#FFA366]" href="./">Política de Privacidade</a> da Pix Buzzard</label>
                 </div>
             </div>
@@ -27,8 +27,10 @@
                 <p class="mx-4 text-white font-poppins text-1-m">ou</p>
                 <div class="h-[2px] bg-[#FF6200] w-64"></div>
             </div>
-            <button type="button" class="mt-3 w-[50%] text-cor-0 text-1-m bg-cor-p1 hover:bg-[#D35400] font-medium rounded-full px-6 py-3.5 text-center me-2 mb-2 dark:bg-cor-p1 dark:hover:bg-[#D35400]">Entrar em sua conta</button>
+            <button type="submit" class="mt-3 w-[50%] text-cor-0 text-1-m bg-cor-p1 hover:bg-[#D35400] font-medium rounded-full px-6 py-3.5 text-center me-2 mb-2 dark:bg-cor-p1 dark:hover:bg-[#D35400]">Entrar em sua conta</button>
         </form>
     </div>
+
+    <script src="../js/main.js"></script>
 </body>
 </html>
