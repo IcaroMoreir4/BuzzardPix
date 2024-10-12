@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundos Imobiliários</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Customização para manter os estilos exatos */
+        .table-header {
+            background-color: #ff6600;
+        }
+        .table-row:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        .table-row:nth-child(even) {
+            background-color: white;
+        }
+        .table-cell {
+            color: black;
+        }
+    </style>
+</head>
+<body class="bg-[url('./assets/bg.png')] bg-no-repeat bg-cover bg-center h-screen text-white h-screen flex items-center justify-center">
+
+<div class="container mx-auto px-4 py-10">
+    <h1 class="text-center text-4xl font-bold mb-4">Fundos Imobiliários</h1>
+    <p class="text-center text-lg text-gray-400 mb-8">
+        Uma oportunidade de investir em grandes empreendimentos imobiliários sem a necessidade de adquirir um imóvel físico.
+    </p>
+    
+    <div class="overflow-x-auto">
+        <!-- Estrutura em flexbox para alinhar a tabela e os botões ao lado -->
+        <div class="flex">
+            <!-- Tabela -->
+            <table class="w-full table-auto border-collapse">
+                <thead>
+                    <tr>
+                        <th class="table-header text-white px-4 py-2">Tipo de Ativo</th>
+                        <th class="table-header text-white px-4 py-2">Empreendimento</th>
+                        <th class="table-header text-white px-4 py-2">Local</th>
+                        <th class="table-header text-white px-4 py-2">Fase</th>
+                        <th class="table-header text-white px-4 py-2">Vendas</th>
+                        <th class="table-header text-white px-4 py-2">Retorno Alvo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td class="table-cell px-4 py-4">Urbanização</td>
+                        <td class="table-cell px-4 py-4">Jardins da Serra</td>
+                        <td class="table-cell px-4 py-4">Maracanaú</td>
+                        <td class="table-cell px-4 py-4">Concluído</td>
+                        <td class="table-cell px-4 py-4">100%</td>
+                        <td class="table-cell px-4 py-4">14% a 17%</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-cell px-4 py-4">Urbanização</td>
+                        <td class="table-cell px-4 py-4">Way Parque</td>
+                        <td class="table-cell px-4 py-4">Santo André</td>
+                        <td class="table-cell px-4 py-4">Concluído</td>
+                        <td class="table-cell px-4 py-4">44%</td>
+                        <td class="table-cell px-4 py-4">20% a 30%</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-cell px-4 py-4">Comerciais</td>
+                        <td class="table-cell px-4 py-4">Kariri Blue Tower</td>
+                        <td class="table-cell px-4 py-4">Crato</td>
+                        <td class="table-cell px-4 py-4">Concluído</td>
+                        <td class="table-cell px-4 py-4">50%</td>
+                        <td class="table-cell px-4 py-4">12% a 16%</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-cell px-4 py-4">Shopping</td>
+                        <td class="table-cell px-4 py-4">XP Malls</td>
+                        <td class="table-cell px-4 py-4">São Paulo</td>
+                        <td class="table-cell px-4 py-4">Concluído</td>
+                        <td class="table-cell px-4 py-4">100%</td>
+                        <td class="table-cell px-4 py-4">15% a 20%</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-cell px-4 py-4">Shopping</td>
+                        <td class="table-cell px-4 py-4">Cariri Shopping</td>
+                        <td class="table-cell px-4 py-4">Juazeiro do N.</td>
+                        <td class="table-cell px-4 py-4">Concluído</td>
+                        <td class="table-cell px-4 py-4">100%</td>
+                        <td class="table-cell px-4 py-4">20% a 25%</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-cell px-4 py-4">Urbanização</td>
+                        <td class="table-cell px-4 py-4">Estádio Geraldão</td>
+                        <td class="table-cell px-4 py-4">Brejo Santo</td>
+                        <td class="table-cell px-4 py-4">Concluído</td>
+                        <td class="table-cell px-4 py-4">28%</td>
+                        <td class="table-cell px-4 py-4">5% a 15%</td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-cell px-4 py-4">Urbanização</td>
+                        <td class="table-cell px-4 py-4">Museu Gonzagão</td>
+                        <td class="table-cell px-4 py-4">Exu</td>
+                        <td class="table-cell px-4 py-4">Concluído</td>
+                        <td class="table-cell px-4 py-4">30%</td>
+                        <td class="table-cell px-4 py-4">11% a 14%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Coluna para os botões "Investir" -->
+            <div class="ml-4 flex flex-col justify-end">
+                <a href="#" class="invest-button bg-orange-600 text-white font-bold rounded-full py-3 px-4 mb-2 transition duration-300 ease-in-out hover:bg-orange-500">Investir</a>
+                <a href="#" class="invest-button bg-orange-600 text-white font-bold rounded-full py-3 px-4 mb-2 transition duration-300 ease-in-out hover:bg-orange-500">Investir</a>
+                <a href="#" class="invest-button bg-orange-600 text-white font-bold rounded-full py-3 px-4 mb-2 transition duration-300 ease-in-out hover:bg-orange-500">Investir</a>
+                <a href="#" class="invest-button bg-orange-600 text-white font-bold rounded-full py-3 px-4 mb-2 transition duration-300 ease-in-out hover:bg-orange-500">Investir</a>
+                <a href="#" class="invest-button bg-orange-600 text-white font-bold rounded-full py-3 px-4 mb-2 transition duration-300 ease-in-out hover:bg-orange-500">Investir</a>
+                <a href="#" class="invest-button bg-orange-600 text-white font-bold rounded-full py-3 px-4 mb-2 transition duration-300 ease-in-out hover:bg-orange-500">Investir</a>
+                <a href="#" class="invest-button bg-orange-600 text-white font-bold rounded-full py-3 px-4 transition duration-300 ease-in-out hover:bg-orange-500">Investir</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
