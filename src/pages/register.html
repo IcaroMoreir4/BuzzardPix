@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Registrar</title>
     <link rel="stylesheet" href="../../build/assets/css/app.css" />
     <link
       rel="shortcut icon"
@@ -13,6 +13,14 @@
   </head>
 
   <body class="h-screen flex overflow-hidden">
+    <div class="w-1/2 h-full">
+      <img
+        src="../../build/assets/images/bzd-login.png"
+        alt="Buzzard login"
+        class="h-full w-full object-cover"
+      />
+    </div>
+
     <div class="w-1/2 h-full flex justify-center items-center">
       <div
         class="border border-bzd-orange rounded-lg p-8 w-1/2 shadow-md bg-white"
@@ -51,9 +59,8 @@
             <label
               for="password"
               class="block text-bzd-orange font-semibold mb-1"
+              >Senha</label
             >
-              Senha
-            </label>
             <input
               id="password"
               type="password"
@@ -62,42 +69,44 @@
               class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-bzd-orange"
             />
             <div *ngIf="passwordValid" class="text-red-500">
-              <p>Senha incorreta</p>
+              <p>A senha deve conter:</p>
+              <ul>
+                <li>Entre 6 a 20 caracteres</li>
+                <li>1 Letra maiúscula</li>
+                <li>1 Letra minúscula</li>
+                <li>1 Número</li>
+                <li>1 Caractere especial (+-_!@#$%^&*.,?)</li>
+              </ul>
             </div>
           </div>
 
-          <div class="flex justify-between">
-            <a
-              href="#"
-              class="text-bzd-orange hover:text-bzd-orange-dark text-sm underline"
+          <div>
+            <label
+              for="confirmPassword"
+              class="block text-bzd-orange font-semibold mb-1"
             >
-              Esqueci minha senha
-            </a>
+              Repita a senha
+            </label>
+            <input
+              id="confirmPassword"
+              type="password"
+              formControlName="confirmPassword"
+              placeholder="Repita sua senha"
+              class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-bzd-orange"
+            />
+            <p *ngIf="confirmPasswordValid" class="text-red-500">
+              As senhas devem ser iguais
+            </p>
           </div>
 
           <button
             type="submit"
             class="w-full bg-bzd-orange hover:bg-bzd-orange-dark text-white font-bold py-2 rounded-lg"
           >
-            Acessar
-          </button>
-
-          <button
-            type="button"
-            class="w-full border border-bzd-orange hover:border-bzd-orange-dark text-bzd-orange hover:text-bzd-orange-dark font-bold py-2 rounded-lg"
-          >
-            Cadastrar conta
+            Criar
           </button>
         </form>
       </div>
-    </div>
-
-    <div class="w-1/2 h-full">
-      <img
-        src="../../build/assets/images/bzd-cadastro.png"
-        alt="Buzzard login"
-        class="h-full w-full object-cover"
-      />
     </div>
   </body>
 </html>
